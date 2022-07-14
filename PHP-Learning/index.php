@@ -1,5 +1,7 @@
 <?php
 
+
+
 $greeting = 'Hello World24245';
 
 
@@ -28,9 +30,19 @@ echo '</pre>';
 
 var_dump($person);
 
-// Ternary Operator check boolean, if true do something, if it's not true do something else
-// true ? 'do something : 'do something else"
 
+
+
+$task = [
+    'title' => 'Finish homework', 
+    'due' => 'today', 
+    'assigned_to' => 'Jeffrey',
+    'completed' => false
+];
 require 'index.view.php';
+require 'functions.php';
+checkAge(22);
+checkAge(12);
+
 
 
