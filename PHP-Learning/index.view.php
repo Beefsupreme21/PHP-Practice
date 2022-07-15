@@ -61,6 +61,17 @@
             </li>
         </ul>
 
+        <ul>
+            <?php foreach ($tasks as $task) : ?>
+            <li>
+                <?php if ($task->completed) : ?>
+                    <strike><?= $task->description; ?></strike>
+                <?php endif; ?>
+                <?= $task->description; ?>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+
 
     </body>
  </html> 
