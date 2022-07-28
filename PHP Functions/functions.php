@@ -19,6 +19,8 @@ function getChar($c) {
 // get_char(65) should return: 'A'
 
 
+
+
 // Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
 
 function remove_exclamation_marks($string) {
@@ -27,6 +29,11 @@ function remove_exclamation_marks($string) {
 
 function remove_spaces(string $s): string {
   return str_replace(' ', '', $s);
+}
+
+// Remove n exclamation marks in the sentence from left to right. n is positive integer.
+function remove(string $s, int $n): string {
+  return preg_replace('/!/', "", $s, $n);
 }
 
 
@@ -42,6 +49,23 @@ function square_sum(array $numbers) : int {
   return $sum;
 }
 
+// Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+function repeatStr($n, $str) {
+  return str_repeat($str, $n);
+}
+
+
+// Combining a for each statement with an if statement
+
+function positive_sum($numbers) {
+  $sum = 0;
+  foreach($numbers as $number) {
+    if ($number > 0){
+      $sum += $number;
+      }
+    }
+  return $sum;
+}
 
 // Returning an array
 
